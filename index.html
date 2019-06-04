@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-EN">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Vanilla Move Cards</title>
+    <script src="js/script.js"></script>
+    <script src="js/vanilla-movecards.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    </head>
+    <body>
+        <h1>Vanilla Move Cards</h1>
+        <p>The element is moving on hover.</p>
+
+        <h2>Basic Example (Pull effect)</h2>
+        <h3>Code</h3>
+        <div class="script-visible">&lt;div id=&quot;card&quot;&gt;&lt;img id=&quot;img&quot; src=&quot;img.jpg&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;</div>
+        <script class="script-visible" contenteditable>window.domReady(function scrollanimdomready() {
+    new vanillaMoveCards(document.getElementById('card'), {
+        target: document.getElementById('img')
+    });
+});</script>
+        <h3>Demo</h3>
+        <div class="card-wrapper" id="card" style="height:200px;width:200px"><img class="card" id="img" src="https://placeimg.com/200/200/any" alt="" /></div>
+
+        <h2>Inverted Example (Push effect)</h2>
+        <h3>Code</h3>
+        <div class="script-visible">&lt;div id=&quot;card2&quot;&gt;&lt;img id=&quot;img2&quot; src=&quot;img.jpg&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;</div>
+        <script class="script-visible" contenteditable>window.domReady(function scrollanimdomready() {
+    new vanillaMoveCards(document.getElementById('card2'), {
+        target: document.getElementById('img2'),
+        attraction: false
+    });
+});</script>
+        <h3>Demo</h3>
+        <div class="card-wrapper" id="card2" style="height:200px;width:200px"><img class="card" id="img2" src="https://placeimg.com/200/200/any" alt="" /></div>
+
+    </body>
+</html>

@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* ----------------------------------------------------------
+  Behavior
+---------------------------------------------------------- */
+
+/* Demo style
+   ----------------------- */
+
+.script-result {
+    border: 1px solid #f0f0f0;
+    background-color: #fafafa;
+}
+
+.script-result,
+.script-visible {
+    padding: 5px;
+    font-size: 13px;
+}
+
+/* Script style
+   ----------------------- */
+
+.script-visible {
+    display: block;
+    margin: 7px 0;
+    border: 1px solid #ccc;
+    font-family: Courier;
+    font-size: 12px;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    background-color: #f0f0f0;
+}
+
+.script-visible:focus {
+    outline: 1px solid #ccc;
+}
+
+/* ----------------------------------------------------------
+  Cards
+---------------------------------------------------------- */
+
+.card,
+.card-wrapper {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    vertical-align: top;
+}
+
+.card {
+    z-index: 2;
+    background-color: #ccc;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,1);
+    transform-origin: center center;
+}
